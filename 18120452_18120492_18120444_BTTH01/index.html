@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+
+</head>
+    
+<body>
+
+<form action="info.html" method="POST">
+    <center>
+        <style>
+            body{
+                background-image: url('info.jpg');
+                background-repeat: no-repeat;
+            }
+        </style>
+        <h1 style="font-size: 50px; color: blue">Login form</h1>
+        <label for="user" style="text-align: center; font-size: 20px; color: red">Username:</label><br>
+        <input type="text" id="Username" name="user" style="width: 300px;height: 30px;border-color: gray;"><br>
+        <label for="password" style="font-size: 20px; color: red;">Password:</label><br>
+        <input type="password" id="Password" name="password" style="width: 300px;height: 30px;border-color: gray;" onkeypress="senddata"><br><br>
+        <button type="submit" id="submit" style="background-color:mediumseagreen;border-color: black;color:white;height: 30px;width: 300px;">Login</button>
+    </center>
+</form>
+<script>
+    function senddata(){
+        document.getElementById("submit").click();
+    }
+</script>
+</body>
+</html>
